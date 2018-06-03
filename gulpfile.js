@@ -167,46 +167,18 @@ gulp.task('concateCss', function () {
     ==================================*/
     //clear out all files and folders from build folder
     gulp.task('build:cleanfolder',function() {
-    	return del(['JFK ScrollTop-Jquery Effects/**'],{force: true});
+    	return del(['Build/**'],{force: true});
     });
 
     //Task to create build directory for all files
     
     		//===Demo files===//
     gulp.task('build:copy',['build:cleanfolder'],  function(){
-    	 gulp.src(['app/**/*/','!app/live_preview.html','!app/help.html','!app/assets/**/*/'])
-    	 			.pipe(filter(['**', '!*app/assets']))
-    			    .pipe(gulp.dest('JFK ScrollTop-Jquery Effects/JFK ScrollTop-Jquery Effects/Demo_files')); 
+    	 gulp.src(['src/**/*/','!src/scss/**/*'])
+    	 			.pipe(filter(['**', '!*src/scss']))
+    			    .pipe(gulp.dest('Build/')); 
     			                
-    		//===Documentation files===// 
-    	gulp.src('app/assets/**/*/')
-    			    .pipe(gulp.dest('JFK ScrollTop-Jquery Effects/JFK ScrollTop-Jquery Effects/Documentation/assets'));
-    	gulp.src('app/help.html')
-    			    .pipe(gulp.dest('JFK ScrollTop-Jquery Effects/JFK ScrollTop-Jquery Effects/Documentation')); //Documentation
     		
-    		//===main plugin files===// 	                                                                                                 //
-    	gulp.src(['app/css/jfk_icon.css','app/js/jquery.jfk-scrollTop.js'])	
-    				.pipe(gulp.dest('JFK ScrollTop-Jquery Effects/JFK ScrollTop-Jquery Effects/JFK ScrollTop-Jquery Effects')); //main files
-
-    		//===Live_preview files===//	    
-    	gulp.src('app/live_preview.html')
-                    .pipe(rename('index.html'))
-    			    .pipe(gulp.dest('JFK ScrollTop-Jquery Effects/Live Preview'));
-        
-        gulp.src(['app/img/**/*','app/font-awesome/**/*'],{base:'app'})                   
-                    .pipe(gulp.dest('JFK ScrollTop-Jquery Effects/Live Preview'));
-            
-
-    	gulp.src('app/css/*.css')
-    				.pipe(concateCss("bundle.min.css"))
-    				.pipe(cleanCSS())
-    			    .pipe(gulp.dest('JFK ScrollTop-Jquery Effects/Live Preview/css/'));
-
-    	gulp.src(['app/js/jquery-3.1.1.js','app/js/bootstrap.js','app/js/Demo.jfk.js'])
-    			.pipe(concat("bundle.min.js"))
-    				.pipe(uglify())
-    			    .pipe(gulp.dest('JFK ScrollTop-Jquery Effects/Live Preview/js/'));		    		    	    
-
 
     });
 
@@ -215,7 +187,7 @@ gulp.task('concateCss', function () {
     //you dont want to include
     gulp.task('build:remove', ['build:copy'], function(){
     	return del([
-    			'JFK ScrollTop-Jquery Effects/bower_components/',
+    			'Build/',
 
     			// 'build/js/!(*.min.js)'
     		]);
