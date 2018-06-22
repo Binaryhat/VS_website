@@ -1,6 +1,6 @@
 /*==============================================================================
 
-    Author Name     :   Fullstackdev(Mahesh Langote)
+    Author Name     :   Mahesh Langote
     Product Name    :   Default workflow
     File Name       :   gulpfile.js
 ==============================================================================    */

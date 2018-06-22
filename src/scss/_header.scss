@@ -1,3 +1,23 @@
 /* ==========================================================================
    HEADER Styles
    ========================================================================== */
+
+   .navbar{
+    background-color: rgba(0,0,0,0.6);
+
+      .navbar-collapse{
+          .nav-item{
+            padding: 0 5px;
+            margin: 0 10px;
+          }
+          .nav-item.active{
+
+              border-radius: 25px;
+              background-color:$vs_blue;
+
+        }
+        .nav-link{
+            color:#fff;
+        }
+      } 
+   }
