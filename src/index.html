@@ -9,20 +9,29 @@
     <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Varseno Solutions</title>
+    <title>Version Solutions</title>
 </head>
 
 <body>
+    <!--   preloader start-->
+    <div id="mask">
+        <div id="circle1"></div>
+        <div id="laoding_text">We deliver yours dreams</div>
+    </div>
+    <!--   preloader Ends-->
+
     <!-- HEADER STARTS -->
-    <header class="container main-navbar">
+    <header class="container-fluid main-navbar fixed-top">
         <!--START Bootstrap4 navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg">
+        <nav class="navbar  navbar-expand-lg custom_container">
             <a class="navbar-brand " href="#">
-                <img src="imgs/logo.png" alt="">
+                <img src="imgs/logo_white.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+
+                </span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -76,7 +85,7 @@
                         <button class="cta-btn cta-btn--orange btn--shine  mt-5">Know More</button>
                     </div>
                 </div>
-                <!-- <div class="carousel-item h-100">
+                <div class="carousel-item h-100">
     
                             <div class="head-text-group ">
                                 <h3>We create</h3>
@@ -93,7 +102,7 @@
                                 <h5>We meet the needs of your business</h5>
                                 <button class="cta-btn cta-btn--orange mt-5">Know More</button>
                             </div>
-                        </div> -->
+                        </div>
             </div>
             <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -113,13 +122,14 @@
 
     <!-- What we do START-->
     <section class="what-we-do">
-        <div class="section-title">
-            <span>What</span>
-            <span>We</span>
-            <span>Do</span>
-        </div>
-        <img src="imgs/orange_arc.png" alt="" class="arc_shape">
-        <div class="section-contents">           
+
+        <img src="imgs/orange_arc.png" alt="" class="arc_shape img-fluid">
+        <div class="section-contents">
+                <div class="section-title">
+                        <span>What</span>
+                        <span>We</span>
+                        <span>Do</span>
+                    </div>
             <div class="content content1">
                 <div class="content__img">
                     <img src="imgs/img1.png" alt="">
@@ -127,7 +137,7 @@
                 <div class="content__info">
                     <div class="info__title">Product Development</div>
                     <p class="info_detail">
-                        Varseno Solutions is a Product development company which involves several important stages like generating ideas, idea screening,
+                        Version Solutions is a Product development company which involves several important stages like generating ideas, idea screening,
                         concept testing, business analysis and market analysis, actual development of the product,
                     </p>
                     <a href="#" class="know-more-link">Know More</a>
@@ -171,23 +181,23 @@
     <!-- What we do ENDS-->
     <!-- who we are START-->
     <section class="who-we-are">
-        <div class="section-title">
-            <span>Who</span>
-            <span>We</span>
-            <span>Are</span>
-        </div>
+       
         <div class="section-contents-top">
+                <div class="section-title">
+                        <span>Who</span>
+                        <span>We</span>
+                        <span>Are</span>
+                    </div>
             <div class="content content--bluebox-title">
                 <div class="video">
                     <video width="400" controls>
-                        <source src="videos/Company Introduction Animation.mp4" type="video/mp4">                        
-                        Your browser does not support HTML5 video.
-                      </video>
+                        <source src="videos/Company Introduction Animation.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+                    </video>
                 </div>
                 <div class="article">
                     <div class="article__title">Journey of thousand miles begin with one step.</div>
                     <div class="article__detail">
-                        Varseno Solutions, the Software Development Company is unique and creative due to its endeavors in delivering amazing mobile
+                        Version Solutions, the Software Development Company is unique and creative due to its endeavors in delivering amazing mobile
                         applications, web applications along with variety of new products.
                     </div>
                     <button class="cta-btn cta-btn--blue btn--shine">Know More</button>
@@ -195,7 +205,7 @@
             </div>
         </div>
         <div class="section-contents-bottom fun-facts">
-            <img src="imgs/arc_with_img.png" alt="" class="arc_shape">
+            <img src="imgs/arc_with_img.png" alt="" class="arc_shape img-fluid">
             <div class="content fact1">
                 <div class="fact__count">
                     54
@@ -206,7 +216,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     </div>
-                    <a href="#" class="fact-link">Lets begin the discussion<i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+                    <a href="#" class="fact-link">Lets begin the discussion
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
             <div class="content fact2">
@@ -219,7 +231,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     </div>
-                    <a href="#" class="fact-link">What our client’s say about us<i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+                    <a href="#" class="fact-link">What our client’s say about us
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
             <div class="content fact3">
@@ -232,12 +246,14 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     </div>
-                    <a href="#" class="fact-link">See Our Work<i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+                    <a href="#" class="fact-link">See Our Work
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="our-clients text-center">
-            <img src="imgs/companies.png"  alt="">
+            <img class="img-fluid" src="imgs/companies.png" alt="">
         </div>
     </section>
     <!-- who we are ENDS-->
@@ -250,28 +266,28 @@
 
     <!-- FOOTER STARTS -->
     <footer>
-        <div class="footer-top">
+        <div class="footer-top custom_container">
             <div class="logo">
-                <img src="imgs/logo.png" alt="varsenoSolutions">
+                <img src="imgs/logo.png" alt="VersionSolutions">
             </div>
             <div class="contact-text">
                 <div class="title">Sales</div>
                 <div class="phone">
                     <i class="fa fa-phone" aria-hidden="true"></i> +1 864-305-5500</div>
                 <div class="email">
-                    <i class="fa fa-envelope" aria-hidden="true"></i> info@varsenosolutions.com</div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> info@Versionsolutions.com</div>
             </div>
         </div>
-        <div class="footer-main">
+        <div class="footer-main custom_container">
             <div class="news">
                 <div class="news__img">
                     <img src="imgs/media.png" alt="">
                 </div>
                 <div class="news__body">
                     <div class="body__text">
-                        “ Varseno solutions are now looking for Business Analyst with 4+ yrs of experience”. Visit now
+                        “ Version solutions are now looking for Business Analyst with 4+ yrs of experience”. Visit now
                     </div>
-                    <a href="#">www.varsenosolutions.com/careers</a>
+                    <a href="#">www.Versionsolutions.com/careers</a>
                 </div>
             </div>
             <div class="about-us">
@@ -292,18 +308,31 @@
                 </ul>
             </div>
             <div class="small-map">
-                <img src="imgs/small_map.png" alt="Map">
+                <img class="img-fluid" src="imgs/small_map.png" alt="Map">
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom ">
             Follow Us On
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
         </div>
-        <div class="footer-copyright">
-            Copyright © 2018-
-            <span> Varseno Solutions</span> | All Rights Reserved
+        <div class="footer-copyright custom_container">
+            <div class="first_part">
+                    Copyright © 2018-
+                    <span> Version Solutions</span> | All Rights Reserved
+            </div>
+
+
+            <div class="second_part">
+                    Sitemap |  Privacy Policy
+            </div>
         </div>
     </footer>
     <!-- FOOTER ENDS -->

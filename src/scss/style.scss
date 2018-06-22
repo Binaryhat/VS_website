@@ -5,3 +5,40 @@
 
 
 
+/*media Queries*/ 
+@media only screen and (max-width: 1366px) {
+    html,body {
+        font-size: 14px;       
+    }
+
+    
+}
+
+@media only screen and (min-width: 1600px) {
+
+
+    .who-we-are .section-contents-top .content--bluebox-title {
+        position: relative;
+        &:after{
+            content: 'Something Know about us';
+            font-size: 3rem;
+            width: 20rem;
+            padding: 3rem 2rem;
+            color: #fff;
+            // background-color: #0066cc;
+            background: linear-gradient(-137deg, #0066cc,#006699);
+            border-radius: 2.5rem;
+            position: absolute;
+            left: -13rem;
+            top: 0;
+            // box-shadow: 0 0 3px 20px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .arc_shape {
+        display: none;
+    }
+}
+

@@ -7,21 +7,21 @@
 .main-slider {}
 
 .carousel-item {
-    position: relative;
+    // position: relative;
     background-color: #ccc;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
     &:nth-child(1) {
         background-image: url(../imgs/slide_img1.png);
     }
     &:nth-child(2) {
-        background-image: url(../imgs/slide_img1.png);
+        background-image: url(../imgs/slide_img2.png);
     }
     &:nth-child(3) {
-        background-image: url(../imgs/slide_img1.png);
+        background-image: url(../imgs/slide_img3.png);
     }
+    
 }
 
 .head-text-group {
@@ -54,7 +54,7 @@
 .what-we-do {
     position: relative;
     overflow: hidden;
-    padding: 112px 0;
+    padding: 7rem 0;
     &:before {
         content: '';
         display: block;
@@ -67,7 +67,7 @@
         background-color: #f8f4f5; // opacity: 0.5;
     }
     .section-title {
-        font-size: 72px;
+        font-size: 4.5rem;
         padding: 0 25px;
         position: absolute;
         left: 0;
@@ -109,9 +109,9 @@
             .content__info {
                 display: flex;
                 flex-flow: column nowrap;
-                padding: 0 50px;
+                padding: 0 3rem;
                 .info__title {
-                    font-size: 36px;
+                    font-size: 2.25rem;
                     font-weight: bold;
                     position: relative;
                     &:before {
@@ -123,11 +123,11 @@
                     }
                 }
                 .info_detail {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                 }
                 .know-more-link {
                     color: $vs_blue;
-                    font-size: 24px;
+                    font-size: 1.5rem;
                     font-weight: 500;
                     align-self: flex-end;
                 }
@@ -168,7 +168,7 @@
             margin-top: 50px;
             text-align: center;
             .sub-text {
-                font-size: 32px;
+                font-size: 2rem;
                 margin: 20px;
             }
         }
@@ -180,7 +180,7 @@
 .who-we-are {
     padding: 100px 0 0;
     .section-title {
-        font-size: 72px;
+        font-size: 4.5rem;
         padding: 0 25px;
         position: absolute;
         left: 0;
@@ -197,6 +197,7 @@
     }
     .section-contents-top {
         max-width: 1600px;
+        position: relative;
         // min-height: 600px;
         padding: 50px;
         margin: 0 auto;
@@ -212,38 +213,36 @@
                 position: relative;
                 &:after{
                     content: 'Something Know about us';
-                    font-size: 50px;
-                    width: 320px;
-                    padding: 50px 30px;
+                    font-size: 1.5rem;
+                    width: 11rem;
+                    padding: 3rem 1.5rem;
                     color: #fff;
-                    // background-color: #0066cc;
-                    background: linear-gradient(-137deg, #0066cc,#006699);
-                    border-radius: 40px;
+                    background: linear-gradient(-137deg, #0066cc, #006699);
+                    border-radius: 2.5rem;
                     position: absolute;
-                    left: -250px;
-                    top: 0;
-                    // box-shadow: 0 0 3px 20px rgba(0,0,0,0.1);
+                    left: -6rem;
+                    top: 7rem;
                 }
             }
             .video {
                 video{
-                    width: 450px;
-                    height: 330px;
+                    width: 28.125rem;
+                    height: 20.625rem;
                 }
             }
             .article {
                 padding: 0 50px;
                 .article__title {
-                    font-size: 45px;
+                    font-size: 2.75rem;
                     font-weight: 500;                    
-                    max-width: 590px;
+                    max-width: 37rem;
                     line-height: 1.2;  
-                    margin-bottom: 20px;                 
+                    margin-bottom: 1.25rem;                 
                 }
                 .article__detail {
-                    max-width: 450px;
-                    font-size: 22px;
-                    padding: 25px 0;
+                    max-width: 28rem;
+                    font-size: 1.5rem;
+                    padding: 1.5rem 0;
                 }
             }
         }
@@ -254,7 +253,7 @@
         padding: 80px 0;
         .arc_shape{
             position: absolute;
-            left:50%;
+            left:55%;
             transform: translateX(-40%);
             top:0;
             height: 100%;
@@ -275,38 +274,39 @@
             align-items: flex-start;
             width: 75%;
             z-index: 1;
+            padding-left: 25px;
             .fact__count {
-                font-size: 150px;
+                font-size: 9.3rem;
                 color: #330000;
                 font-weight: 500;
                 line-height: 1;
             }
             .fact__info {
-                max-width: 570px;
-                margin-left: 40px;
+                max-width: 34rem;
+                margin-left: 2.5rem;
                 .info__title {
-                    font-size: 48px;
+                    font-size: 3rem;
                     font-weight: 500;
                     line-height: 2.4;
                    
                     
                 }
                 .info_detail {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     font-weight: 500;
                 }
                 .fact-link {
                     color:$vs_blue;
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     display: flex;
                     flex-flow: row nowrap;
                     align-items: center;
                     text-decoration: none;
-                    padding: 20px 0;
+                    padding: 1.25rem 0;
                     cursor: pointer;
                     i{
-                        margin-left: 20px;
-                        font-size: 30px;
+                        margin-left: 1.25rem;
+                        font-size: 1.9rem;
                     }
                 }
             }
@@ -342,7 +342,7 @@
     width:100%;
     min-height: 465px;
     background-color: $vs_orange;
-    background-image: url(../imgs/city.png);   
+    background-image: url(../imgs/city.jpeg);   
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -352,11 +352,14 @@
     justify-content: center;
     align-items: center;
     .title{
-        font-size: 60px;
+        font-size: 3.75rem;
         color:#fff;
         font-weight: 500;
         line-height: 2;
     }
 
 }
+
+
+
 

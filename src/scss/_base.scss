@@ -1,14 +1,14 @@
 /* ==========================================================================
    BASE Styles
    ========================================================================== */
+
 //Variables
 $vs_blue:#0066cc;
 $vs_orange:#FA7F08;
-
-
-
 /* Typography */
-html,body{
+
+html,
+body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -16,49 +16,49 @@ html,body{
 }
 
 /*srollbar*/
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
     background-color: #eee;
-   
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: $vs_blue;
-    height:50px;
+    height: 50px;
     border-radius: 50%;
-} 
+}
+
 /* components */
-.cta-btn{
-    border:none;
+
+.cta-btn {
+    border: none;
     outline: none !important;
     font-size: 25px;
     padding: 10px 50px;
     border-radius: 36px;
     cursor: pointer;
-
-    @at-root #{&}--orange{
-        background-color:$vs_orange;
-        color:#fff;
+    @at-root #{&}--orange {
+        background-color: $vs_orange;
+        color: #fff;
     }
-    @at-root #{&}--blue{
-        background-color:$vs_blue;
-        color:#fff;
+    @at-root #{&}--blue {
+        background-color: $vs_blue;
+        color: #fff;
     }
-
-} 
-
+}
 
 /* normal button style */
+
 .btn--shine {
     overflow: hidden;
     position: relative;
 }
 
 /* button hover style if required */
-.btn--shine:hover {
-    
-}
+
+.btn--shine:hover {}
+
 /* generated element for shine effect.
  * normal state is semi-transparent
  * white but with zero width. Set no
@@ -67,6 +67,7 @@ html,body{
  * will play in reverse when your mouse
  * leaves the element
  */
+
 .btn--shine:after {
     content: "";
     position: absolute;
@@ -74,24 +75,109 @@ html,body{
     left: 0px;
     width: 0%;
     height: 100%;
-    background-color: rgba(255,255,255,0.4);
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
+    background-color: rgba(255, 255, 255, 0.4);
     transition: none;
-    
 }
+
 /* on hover we animate the width to
  * 100% and opacity to 0 so the element
  * grows and fades out 
  */
+
 .btn--shine:hover:after {
     width: 120%;
-    background-color: rgba(255,255,255,0);
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
+    background-color: rgba(255, 255, 255, 0);
     transition: all 0.3s ease-out;
+}
+
+/* preloader*/
+
+#mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.95;
+    /* you can change color of mask here*/
+    background: #f3f3f3;
+    z-index: 999999;
+    /* makes sure it stays on top */
+}
+
+#laoding_text {
+    display: block;
+    position: absolute;
+    font-family: sans-serif,arial;
+    top: calc(50% + 50px);
+    left: -50%;   
+    transform: translateX(-50%);
+    animation: slideInLeft .6s ease-in  forwards;
+    padding: 2px 0;
+    color:$vs_blue;
+    font-style: italic;
+    &:before{
+        content:'';
+        display: block;
+        position: absolute;
+        left: -35px;;
+        bottom: 40%;
+        height: 5px;
+        width: 25px;
+        background-color: $vs_orange;
+    }
+    &:after{
+        content:'';
+        display: block;
+        position: absolute;
+        right: -35px;;
+        bottom: 40%;
+        height: 5px;
+        width: 25px;
+        background-color: $vs_orange;
+    }
+  }
+  
+
+#circle1 {
+    display: block;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    border: 4px solid rgba(0, 0, 0, .15);
+    border-top: 4px $vs_blue solid;
+    border-bottom: 4px $vs_orange solid;
+    border-radius: 50%;
+    -webkit-animation: spin1 1s infinite linear;
+    animation: spin1 1s infinite linear;
+}
+@keyframes slideInLeft {
+    from {
+        left:-50%;
+    }
+  
+    to {
+        left:50%;
+    }
+  }
+
+@keyframes spin1 {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+
+/*common classes*/ 
+.custom_container{
+    max-width: 1600px;
+    margin: auto;
 }

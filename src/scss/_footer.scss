@@ -8,27 +8,27 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    padding: 50px;
+    padding: 50px 25px;
     .logo{
-        margin-right: 100px;
+        margin-right: 6rem;
     }
     .contact-text{
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        font-size: 26px;
+        font-size: 1.5rem;
         color:#666;
         .title{
-            font-size: 30px;
+            font-size: 1.75rem;
             font-weight: bold;
             color:#666;
-            margin: 0 30px;
+            margin: 0 1.75rem;
         }
         .phone{
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            margin: 0 25px;
+            margin: 0 1.5rem;
             i{
                 color:$vs_blue;
                 padding: 0 10px;
@@ -38,7 +38,7 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            margin: 0 25px;
+            margin: 0 1.5rem;
             i{
                 color:$vs_blue;
                 padding: 0 10px;
@@ -53,23 +53,23 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 50px;
+    padding: 50px 25px;
     .news{
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
-        height: 300px;
-        width: 450px;
+        height: 18rem;
+        width: 28rem;
         background-color: #f8f4f5;
         border-radius: 10px;
         .news__img{
             margin-right: 25px;
         }
         .news__body{
-            max-width: 270px;
+            max-width: 16.5rem;
             .body__text{
-                font-size: 16px;
+                font-size: 1rem;
             }
             a{
 
@@ -78,10 +78,10 @@
     }
     .about-us,.services{
         .title{
-            font-size: 25px;
+            font-size: 1.5rem;
             font-weight: bold;
             color:#666;
-            margin-bottom: 25px;            
+            margin-bottom: 1.5rem;            
         }
         ul{
             list-style: none;
@@ -89,36 +89,41 @@
 
         }
         li{
-            font-size: 20px;
+            font-size: 1.25rem;
             padding: 5px;
         }
     }
     .small-map{
-
+        max-width: 450px;
     }
 }
 
 .footer-bottom{    
     text-align: center;
-    font-size: 20px;   
+    font-size: 1.25rem;   
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    padding: 25px 0;
+    padding: 1.5rem 0;
     background-color: #f8f4f5;
     i{
-       font-size: 30px;
+       font-size: 1.75rem;
        color:$vs_blue; 
-       margin: 0 25px;
+       margin: 0 1.25rem;
     }
 }
 
 .footer-copyright{
     padding: 25px 50px;
     color:#666;
-    
-    >span{
-        font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .first_part{
+        >span{
+            font-weight: bold;
+        }
     }
+
 }
