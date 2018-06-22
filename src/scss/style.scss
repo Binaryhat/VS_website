@@ -2,43 +2,164 @@
 @import "header";
 @import "main";
 @import "footer";
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
 
-/*media Queries*/ 
-@media only screen and (max-width: 1366px) {
-    html,body {
-        font-size: 14px;       
+    .head-text-group h3{
+       font-size:  2rem;
+    }
+    .head-text-group h1{
+        font-size:  5.5rem;
+    }
+    .head-text-group h5{
+        font-size:  1.5rem;
     }
 
-    
+
+    .what-we-do .section-contents .content{
+        flex-flow: column wrap;
+    }
+    .what-we-do .section-contents .content .content__info .info__title:before{
+        display: none;
+    }
+    .what-we-do .section-contents .content2 .info__title,
+    .what-we-do .section-contents .content2 .info_detail{
+        text-align: left;
+    }
+    .what-we-do .section-contents .content3 .content__info .know-more-link{
+        align-self: flex-end;
+    }
+    .who-we-are .fun-facts .content{
+        flex-flow:column wrap;
+    }
+    .who-we-are .fun-facts .content .fact__info{
+        margin-left: 0;
+    }
+    .who-we-are .fun-facts .content .fact__info .info__title{
+        line-height: 1.5;
+    }
+    .who-we-are .section-contents-bottom{
+        padding: 50px 0;
+    }
+
+    .footer-main .news{
+        width:100%;
+        margin-bottom: 50px;
+    }
+    .footer-copyright{
+        flex-flow:column wrap;
+    }
 }
 
+// Large devices (desktops, 992px and up)
+@media  (max-width: 1199.98px) {
+    .footer-main .small-map {
+        max-width: 100%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .who-we-are .section-contents-top .content--bluebox-title:after{
+        display: none;
+    }
+    .what-we-do .section-title,.who-we-are .section-title{
+        position: relative;
+        margin: auto;
+        margin-bottom: 100px;
+        >span{
+            display: inline-block;
+        }
+    }
+    .who-we-are .section-title{
+        margin-bottom: 50px;
+    }
+    .what-we-do .section-contents .content1,
+    .what-we-do .section-contents .content2,
+    .what-we-do .section-contents .content3 {
+        align-self: center;
+    }
+    .what-we-do .section-contents .content2{
+        margin-bottom: 100px;
+    }
+
+    .who-we-are .section-contents-top{
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+    .who-we-are .section-contents-top .content{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .who-we-are .section-contents-top .content .article{
+        text-align: center;
+    }
+    .who-we-are .section-contents-top .content .article .article__title{
+        margin-top: 25px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .who-we-are .section-contents-top .content .article .article__detail{
+        max-width: 100%;
+        text-align: center;
+    }
+    .who-we-are .fun-facts .fact1,.who-we-are .fun-facts .fact2 ,.who-we-are .fun-facts .fact3 {
+        align-self: center;
+    }
+    .footer-top{
+        justify-content: center;
+        .logo{
+            display: none;
+        }
+        .contact-text{
+            justify-content: center;
+        }
+        
+    } 
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+
+}
+
+
+/* Extra media Queries*/
+@media only screen and (max-width: 1280px) {
+    .arc_shape {
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 1366px) {
+    html,
+    body {
+        font-size: 14px;
+    }
+}
+// Extra large devices (large desktops, 1600px and up)
 @media only screen and (min-width: 1600px) {
-
-
     .who-we-are .section-contents-top .content--bluebox-title {
         position: relative;
-        &:after{
+        &:after {
             content: 'Something Know about us';
             font-size: 3rem;
             width: 20rem;
             padding: 3rem 2rem;
-            color: #fff;
-            // background-color: #0066cc;
-            background: linear-gradient(-137deg, #0066cc,#006699);
+            color: #fff; // background-color: #0066cc;
+            background: linear-gradient(-137deg, #0066cc, #006699);
             border-radius: 2.5rem;
             position: absolute;
             left: -13rem;
-            top: 0;
-            // box-shadow: 0 0 3px 20px rgba(0,0,0,0.1);
+            top: 0; // box-shadow: 0 0 3px 20px rgba(0,0,0,0.1);
         }
-    }
-}
-
-@media only screen and (max-width: 1280px) {
-    .arc_shape {
-        display: none;
     }
 }
 
