@@ -1,60 +1,58 @@
 /* ==========================================================================
    FOOTER Styles
    ========================================================================== */
-/*Footer */ 
 
-.footer-top{
+/*Footer */
 
+.footer-top {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     padding: 50px 25px;
-    .logo{
+    .logo {
         margin-right: 6rem;
     }
-    .contact-text{
+    .contact-text {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         font-size: 1.5rem;
-        color:#666;
-        .title{
+        color: #666;
+        .title {
             font-size: 1.75rem;
             font-weight: bold;
-            color:#666;
+            color: #666;
             margin: 0 1.75rem;
         }
-        .phone{
+        .phone {
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
             margin: 0 1.5rem;
-            i{
-                color:$vs_blue;
+            i {
+                color: $vs_blue;
                 padding: 0 10px;
             }
         }
-        .email{
+        .email {
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
             margin: 0 1.5rem;
-            i{
-                color:$vs_blue;
+            i {
+                color: $vs_blue;
                 padding: 0 10px;
             }
         }
     }
 }
 
-
-.footer-main{
-   
+.footer-main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 50px 25px;
-    .news{
+    .news {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -63,67 +61,82 @@
         width: 28rem;
         background-color: #f8f4f5;
         border-radius: 10px;
-        .news__img{
+        .news__img {
             margin-right: 25px;
         }
-        .news__body{
+        .news__body {
             max-width: 16.5rem;
-            .body__text{
+            .body__text {
                 font-size: 1rem;
             }
-            a{
-
-            }
+            a {}
         }
     }
-    .about-us,.services{
-        .title{
+    .about-us,
+    .services {
+        .title {
             font-size: 1.5rem;
             font-weight: bold;
-            color:#666;
-            margin-bottom: 1.5rem;            
+            color: #666;
+            margin-bottom: 1.5rem;
         }
-        ul{
+        ul {
             list-style: none;
             padding: 0;
-
         }
-        li{
+        li {
             font-size: 1.25rem;
             padding: 5px;
         }
     }
-    .small-map{
-        max-width: 450px;
+    .small-map {
+        width: 505px;
+        position: relative;
+        .fa-map-marker {
+            color: $vs_blue;
+            position: absolute;
+            font-size: 26px;
+        }
+        .marker1 {
+            top: 53px;
+            left: 58px;
+        }
+        .marker2 {
+            top: 79px;
+            left: 109px;
+        }
+        .marker3 {
+            top: 112px;
+            right: 154px;
+        }
     }
 }
 
-.footer-bottom{    
+.footer-bottom {
     text-align: center;
-    font-size: 1.25rem;   
+    font-size: 1.25rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     padding: 1.5rem 0;
     background-color: #f8f4f5;
-    i{
-       font-size: 1.75rem;
-       color:$vs_blue; 
-       margin: 0 1.25rem;
+    i {
+        font-size: 1.75rem;
+        color: $vs_blue;
+        margin: 0 1.25rem;
     }
 }
 
-.footer-copyright{
+.footer-copyright {
     padding: 25px 50px;
-    color:#666;
+    color: #666;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .first_part{
-        >span{
+    .first_part {
+        >span {
             font-weight: bold;
         }
     }
-
 }

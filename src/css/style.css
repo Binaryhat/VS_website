@@ -779,25 +779,50 @@ body {
   font-size: 1rem;
 }
 
-.footer-main .about-us .title, .footer-main .services .title {
+.footer-main .about-us .title,
+.footer-main .services .title {
   font-size: 1.5rem;
   font-weight: bold;
   color: #666;
   margin-bottom: 1.5rem;
 }
 
-.footer-main .about-us ul, .footer-main .services ul {
+.footer-main .about-us ul,
+.footer-main .services ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-main .about-us li, .footer-main .services li {
+.footer-main .about-us li,
+.footer-main .services li {
   font-size: 1.25rem;
   padding: 5px;
 }
 
 .footer-main .small-map {
-  max-width: 450px;
+  width: 505px;
+  position: relative;
+}
+
+.footer-main .small-map .fa-map-marker {
+  color: #0066cc;
+  position: absolute;
+  font-size: 26px;
+}
+
+.footer-main .small-map .marker1 {
+  top: 53px;
+  left: 58px;
+}
+
+.footer-main .small-map .marker2 {
+  top: 79px;
+  left: 109px;
+}
+
+.footer-main .small-map .marker3 {
+  top: 112px;
+  right: 154px;
 }
 
 .footer-bottom {
@@ -836,6 +861,9 @@ body {
   font-weight: bold;
 }
 
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 @media (max-width: 575.98px) {
   .first_part {
     text-align: center;
@@ -887,6 +915,15 @@ body {
   .footer-copyright {
     -ms-flex-flow: column wrap;
         flex-flow: column wrap;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    background-color: #333;
+  }
+  .main-navbar--white .navbar-nav {
+    background-color: transparent;
   }
 }
 
