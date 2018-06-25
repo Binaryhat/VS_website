@@ -14,7 +14,7 @@ $(document).ready(function () {
     // scroll
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if (scroll > 600) {
+        if (scroll > 50) {
           $(".main-navbar").addClass("main-navbar--white");
           $(".navbar-brand img").attr('src','imgs/logo.png');
         }

@@ -9,6 +9,9 @@
     .first_part{
         text-align: center;
     }
+    .navbar .navbar-brand img {
+        height: 40px;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -16,7 +19,7 @@
 
 }
 
-// Medium devices (tablets, 768px and up)
+// Medium devices (tablets, 768px )
 @media (max-width: 768px) {
 
     .head-text-group h3{
@@ -73,7 +76,7 @@
     }
 }
 
-// Large devices (desktops, 992px and up)
+// Large devices (desktops, 992px)
 @media  (max-width: 1199.98px) {
     .footer-main .small-map {
         max-width: 100%;

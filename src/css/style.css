@@ -868,6 +868,9 @@ body {
   .first_part {
     text-align: center;
   }
+  .navbar .navbar-brand img {
+    height: 40px;
+  }
 }
 
 @media (max-width: 768px) {
